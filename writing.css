@@ -1,0 +1,41 @@
+ *, ::before, ::after{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+
+ }
+ body{
+     background: black;
+     text-align: center;
+ }
+ h1{
+     font-family: open sans;
+     font-weight: 400;
+     font-size: 150px;
+     color: #ffff;
+     display: inline-block;
+     margin-top: 100px;
+     position: relative;
+ }
+ h1::after{
+     content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 2px;
+        background: #dadada;
+        right: -15px;
+        top: 0;
+        animation: cursor 2s infinite;
+ }
+ @keyframes cursor{
+     0%{
+         opacity: 1;
+     }
+     50%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 1;
+     }
+ }

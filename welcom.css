@@ -1,0 +1,582 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+   width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.b1{
+    background-image: url("img/cn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img{
+    border: 5px solid gray;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 100px;
+}
+/* .img img{
+   
+    align-items: center;
+    margin: 80px ;
+    width: 90%;
+    height: 50vh;
+   position: relative;
+   top: -50px;
+  
+} */
+.img .hand{
+    margin-left: 6%;
+    width: 80%;
+    z-index: -1;
+    position: absolute;
+    top: 72%;
+    height: 30vh;
+}
+
+.img p{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    color: black;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    top: 5vh;
+    /* padding-top: 15vh; */
+    height: 80vh;
+    
+}
+.img h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.img h4{
+    width: 38%;
+    font-size: 30px;
+    margin: 50px auto;
+    font-style: oblique;
+    font-weight: bold;
+    color: #5c178a;
+    text-shadow: 0 0 15px rgb(185, 185, 223);
+}
+.rbticon{
+    opacity: 0;
+    transition: opacity 60s ease-out;
+}
+.btns{
+    width: 20%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    background: none;
+    position: absolute;
+    top: 120%;
+    left: 40%;
+    z-index: 900900;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    border:2px solid gray;
+    transition: all 0.9s;
+}
+.btns:hover{
+    background: rgb(127, 20, 177);
+}
+/* fin de page d'accueil ou le menu welcome */
+
+/* commencement d'une nouvelle page de la carte credit*/
+
+.general{
+    margin: 20px auto;
+    margin-top: 80px;
+    width: 55%;
+    height: 70vh;
+    background: rgb(215, 216, 213);
+    border: 4px  dashed rgb(95, 79, 79);
+    box-shadow: 0 0 20px rgba(1, 1, 4);
+}
+.general h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+.general input:hover{
+    height: 30px;
+    font-size: 16px;
+    width: 26%;
+}
+.general .photo{
+    width: 30%;
+    height: 32vh;
+    border: 3px solid gray;
+    background-color:transparent;
+    margin-top: 50px;
+    position: relative;
+    left: 10%;
+}
+.general .photo img{
+    width: 100%;
+    height: 31vh;
+    display: none;
+}
+.general label{
+    display: block;
+   position: relative;
+   top: -210px;
+   left: 42%;
+   padding: 2px;
+}
+
+.general ul li{
+    display: block;
+   position: relative;
+   top: -230px;
+   left: 67%;
+   padding: 2px;
+}
+.general .date{
+    width: 26.5%;
+}
+#suivant-btn{
+    position: relative;
+    top: -200px;
+    left: 30%;
+    width: 30%;
+    height: 40px;
+}
+
+/* on commence la page de connexion */
+.bck{
+    margin: 20px auto;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("img/bank-mobile.png");
+    /* background-image: linear-gradient(rgb(145, 123, 155), rgb(175, 173, 206), rgb(129, 108, 143)); */
+    height: 100vh;
+}
+.general2 img{
+    z-index: -2;
+    
+}
+.general2 .left-img h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.general2 .left-img{
+   width: 30%;
+    height: 80vh;
+   background-color: #5c178a;
+  
+    position: absolute;
+    left: 25%;
+    right: 50px;
+    top: 8%;
+}
+
+.general2 p{
+   padding: 20px;
+   font-size: 20px;
+   align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10vw;
+}
+.general2 h3{
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+}
+.ouvrir{
+    margin-left: 50px;
+    border: 2px solid gray;
+    width: 70%;
+    font-size: 30px;
+    border-radius: 9999px;
+    text-decoration: none;
+    columns: black;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.left-img a{
+    text-decoration: none;
+    color: black;
+}
+.sml{
+    cursor: pointer;
+    margin-left: 10vw;
+}
+.right-conexion{
+    height: 80vh;
+   background-color: #ffffff;
+    position: absolute;
+    left: 54%;
+    top: 8%;    
+    width: 30%;
+}
+.right-conexion label{
+    display: block;
+   position: relative;
+   top: -210px;
+   left: 42%;
+   padding: 2px;
+}
+
+
+
+
+
+.right-conexion label{
+    position: relative;
+    left: -5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    top: 0%;
+    margin: 20px;
+    
+}
+.right-conexion h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.right-conexion input{
+    font-size: 20px;
+    height: 40px;
+    width: 70%;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.right-conexion input[type="checkbox"]{
+
+    font-size: 30px;
+    height: 30px;
+    width: 35%;
+    outline-color:blue;
+    position: relative;
+    top: -15px;
+    left:-25px;
+}
+#robot{
+    width: 75%;
+    height: 40px;
+    margin-top: 50px;
+    align-items: center;
+    background-color: rgb(240, 238, 238);
+    border:2px solid gray;
+    margin-left: 10px;
+   
+}
+#robot i{
+    position: relative;
+    top: -40px;
+    left: 95px;
+    font-size: 18px;
+    display: flex;
+}
+.robot img{
+    transition: all 0.3s;
+    z-index: 1;
+    position: absolute;
+    top:30vh; 
+    margin-left: 10%; 
+    z-index: 111;
+}
+#robot button{
+    width: 32%;
+     background-color: #5c178a;
+    color: black;
+    height: 40px;
+    display: inline;
+    margin-left: 40px;
+}
+
+.typer{
+        z-index: 1;
+        width: 100%;
+        align-items: center;
+        height: 100px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #placide{
+        position: relative;
+        top: 30vh;
+    }
+    .writer p::after{
+        font-weight: bold;
+        content: "";
+        position: absolute;
+        margin-top: 20px;
+        display: block;
+        height: 45px;
+        width: 3px;
+        background: #fffefe;
+        right: 0;
+        top: 0;
+        
+        animation: cursor 1s infinite;
+    }
+    .writer{
+        font-size: 80px;
+        font-weight: lighter;
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+        animation: typing 9s steps(18);
+        animation-iteration-count: infinite;
+        
+        
+    }
+    @keyframes typing{
+        from {width:0}
+        to {width: 100%;}
+    }
+    @keyframes cursor{
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+
+    }
+
+/* ce fini l'animation */
+
+
+
+
+/*======================== ceci est reserve pour le page de chargement du site ===================*/
+.loader{
+    height: 130vh;
+     width: 100%;
+    position: absolute;
+    z-index: 1111;
+    top: 0px;
+    left: 0;
+     background: gray;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+
+.lettre{
+     color: #484848;
+     font-size: 80px;
+     letter-spacing: 15px;
+     margin-bottom: 150px;
+     animation: flash 1.2s linear infinite;
+ }
+
+.lettre:nth-child(1){
+     animation-delay:0.1s;
+ }
+ .lettre:nth-child(2){
+     animation-delay:0.2s;
+ }
+ .lettre:nth-child(3){
+     animation-delay:0.3s;
+ }
+ .lettre:nth-child(4){
+     animation-delay:0.4s;
+ }
+ .lettre:nth-child(5){
+     animation-delay:0.5s;
+ }
+ .lettre:nth-child(6){
+     animation-delay:0.6s;
+ }
+ .lettre:nth-child(7){
+     animation-delay:0.7s;
+ }
+ .lettre:nth-child(8){
+     animation-delay:0.8s;
+ }
+ .lettre:nth-child(9){
+     animation-delay:0.9s;
+ }
+ .lettre:nth-child(10){
+     animation-delay:0.10s;
+ }
+ .lettre:nth-child(11){
+     animation-delay:0.11s;
+ }
+ .lettre:nth-child(12){
+     animation-delay:0.12s;
+ }
+ .lettre:nth-child(13){
+     animation-delay:0.1s;
+ }
+ .fondu-out{
+     opacity: 0;
+     transition: opacity 8s ease-in-out;
+ }
+
+@keyframes flash{
+    0%{
+       color: white;
+       text-shadow: gray;
+    }
+    90%{
+       color:black;
+       text-shadow: none;
+    }
+    100%{
+       color: white;
+       text-shadow: gray;
+    }
+}
+
+
+
+.charge{
+    opacity: 0;
+    transition: opacity 3s ease-out;
+}
+/* le chargement du page fini par ici */
+
+
+
+
+
+/*================ le footer======================== */
+
+footer{
+    background: #5c178a;
+    margin-bottom: 30px;
+    border-top: 10px solid #ffff;
+}
+footer h2{
+    
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+
+}
+footer h3{
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+
+
+}
+footer p{
+    margin: 20px;
+    font-size: 20px;
+   
+}
+footer ul li{
+    list-style: none;
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 5vh;
+    font-size: 20px;
+    top: -39vh;
+
+
+}
+#contact-nous{
+    position: relative;
+    left: 76vh;
+    border-bottom: 2px solid gray;
+    width: 30%;
+}
+footer ul {
+    border-bottom: 5px solid #ffff;
+}
+footer b{
+   margin-left: 40vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .fa-facebook, .fa-twitter, .fa-youtube, .fa-whatsapp{
+    color: blue;
+}
+footer .fa-facebook, .fa-twitter, .fa-youtube, .fa-whatsapp{
+   font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 95vh;
+    top: -35vh;
+}
+#image-pay{
+    width: 100%;
+    height: 130px;
+    
+    
+}
+footer #img-foo{
+    cursor: pointer;
+   width: 30%;
+   height: auto;
+   z-index: 1;
+   margin-left: 20px;
+   position: absolute;
+   box-shadow: 0 0 10px rgba(0, 0, 0,4);
+}
+/* span{
+    font-size: 50px;
+    border-radius: 50px;
+    color: chartreuse;
+   
+   transition: all 0.9;
+   position: absolute;
+    top: 60%;
+    display: none;
+} */
+.b h3{
+    font-size: 18px;
+
+}
+.sh{
+    display: block;
+    position: fixed;
+    z-index: 2;
+    font-size: 90px;
+    width: 5%;
+    height: auto;
+    color: cyan;
+   background-color: darkgrey;
+}
+
+footer #img-foo{
+    cursor: pointer;
+   width: 30%;
+   height: auto;
+   z-index: 1;
+   margin-left: 20px;
+   position: absolute;
+   box-shadow: 0 0 10px rgba(0, 0, 0,4);
+}
+#local{
+    position: absolute;
+    left: 70%;
+    bottom: -181.1vh;
+}
+/* fini du footer */

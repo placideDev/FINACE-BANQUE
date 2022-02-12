@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcoming</title>
+    <link rel="stylesheet" href="welcom.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body class="b1">
+   
+
+    <div class="img">
+       <h1> Banque de micro-finance FINALINE</h1>
+            <h4 id="message"> <div class="typer">
+        <div class="writer">
+            <p id="placide">soyez le bienvenu chez Nous</p>
+        </div>
+    </div></h4>
+        <p>
+            Soyez le Bienvenu dans notre banque Micro financiere FINALINE  qui vous offre de bons services de qualite et une bonne
+            couverture de votre epargne en ligne et qui a deja gagne plus de notre de gens 
+            incomptable depuis 5ans de service nous serons encore  tres heureux d'avoir creer un compte chez finaline ou si vpous 
+            avez deja un compte ne hesite pas de vous connecter on est la pour votre service.
+        </p>
+        <!-- <img src="img/ch2.png" class="hand"> -->
+        <a type="submi" href="page-connexion.html" class="btns">c'est parti <i class="fas fa-smile" color="yellow"></i> </a>
+    </div> 
+    <div class="loader">
+        <span class="lettre">L</span>
+        <span class="lettre">O</span>
+        <span class="lettre">A</span>
+        <span class="lettre">D</span>
+        <span class="lettre">I</span>
+        <span class="lettre">N</span>
+        <span class="lettre">G</span>
+       
+        <span class="lettre">.</span>
+        <span class="lettre">.</span>
+        <span class="lettre">.</span>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+</body>
+</html>
+
+
+<script>
+    let pld = 0;
+    let text = 'SOYEZ LE BIENVENU DANS notre BANQUE FINALINE';
+    let speed = 50;
+
+
+    // function typeWriter(){
+    //     if (pld < text.length) {
+    //         document.getElementById('message').innerHTML += text.charAt(pld)
+    //          pld++;
+    //         setTimeout(typeWriter, speed);
+
+            
+    //     }
+    // }
+    // typeWriter();
+
+    const loader = document.querySelector('.loader');
+    
+        window.addEventListener('load', ()=> {
+            loader.classList.add('fondu-out');
+        })
+</script>

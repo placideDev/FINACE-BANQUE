@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faire un retrait</title>
+    <link rel="stylesheet" href="paiement.css">
+
+</head>
+<body>
+   
+    <div class="general">
+        <div class="header">
+            <h2>FINALINE</h2>
+            <ul>
+                <li> <a href="accueil.html">Banque</a></li>                </li>
+                <li> <a href="service.html">service</a></li>                </li>
+                <li> <a href="#appropos">Apropos</a></li>                </li>
+                <li> <a href="#contact-nous">Contactez nous</a></li>                </li>
+            
+            </ul>
+        </div>
+         <i class="fas fa-bars" onclick="navbar()"></i>
+           <nav>
+                 <div id="navbars" class="corp">
+                <ul class="list">
+                    <i class="fas fa-arrow-left" onclick="retun()"></i>
+                    <li> <a href="gerance-du-compte.html">Compte</a></li> 
+                    <li> <a href="surculation.html">Detail client</a></li> 
+                  <li> <a href="credit.html">Credit</a> </li>
+                  <li><a href="un-depot.html">Depot</a></li>
+                  <li> <a href="paiement1.html">Transfert</a> </li>
+                  <li> <a href="retraite.html">Retrait</a> </li>
+                
+                    </ul> 
+                </div>
+            </nav>
+
+
+   </div>   <!--fini le header     -->
+
+
+<div class="corps mobil">
+    <div class="detail">
+    <h2 class="h2">faire un retrait</h2>
+    <div class="righ">
+        <label for="input">nom </label> <input type="text" placeholder="votre  non et prenom">
+        <label for="input">Adresse </label><input type="text" placeholder="adress">
+        <label for="input">Ville </label> <input type="text" placeholder="vilee">
+        <label for="input">Code postal</label><input type="number" placeholder="code postal et votre numero telephonique">
+    </div>
+    <div class="right-center">
+        <h3 class="h3">indique votre adresse precedente</h3>
+        <label for="input" aria-placeholder="adresse" >adresse</label> <input type="text" placeholder="adresse">
+        <label for="input" aria-placeholder="ville" >ville</label> <input type="text" placeholder="ville">
+        <label for="input" aria-placeholder="code postal" >code postal</label><input type="number" placeholder="code postal et numero telephonique">
+
+    </div>
+    
+
+</div>
+<form action="post">
+    <div class="float">
+        <h2>Banque financier</h2>
+        <h4>Ngagara2</h4>
+        <h4> <a href="tel:68352954"> tel:68352954</a></h4>
+        <label for=""> Motif</label>
+        <input type="text" name="" id="motif" placeholder="ecrivez votre motif de payement" required>
+        <label for="">Motant</label>
+        <input type="number" placeholder="mettez le montant du" required>
+        <label for="">Total</label>
+
+        <input type="text" placeholder="mettez le montant par en tout lettre" required>
+        <label for="" id="fr" >faire un retrait: </label>
+        <i> elctronique ? <input type="checkbox" >
+        par comptant ? <input type="checkbox"></i>
+    </div>
+ <button  class="suivant" type="reset" title="supprimer"> annuler</button> 
+    <button  type="submit" class="suivant" formaction="accueil.html" title="confirmer l'envoie ?">Envoyez?</button>
+    <button onclick="addition()" id="JS" title="c'est bouton permet d'effectuer envoie par serie ou par etape">L'ENVOIE PAR SERIE</button>
+    </form>
+</div>
+
+<span id="b">
+              <ul class="list" onclick="close()">
+                   
+                    <a href="discussion.html"><i class="fas fa-sms" title="souhaitez-vous une discussion?"></i></a>
+                       
+            </ul>
+    </span>
+     
+     
+    <footer>
+                <h2 id="appropos">Apropos</h2>
+                <p>
+        
+                Le site lafinancepourtous.com est édité par l’Institut pour l’Education Financière du Public (IEFP), association d’intérêt général, éligible au mécénat et agréée par le Ministère de l’Education Nationale. L’IEFP a été créé pour aider chacun à acquérir les bases de connaissances nécessaires pour :
+        
+                 Se sentir plus à l’aise avec les questions financières.
+                  Comprendre les enjeux économiques du monde dans lequel nous vivons.
+                 Prendre en toute connaissance de cause les décisions qui nous concernent.
+                </p>
+                <h3 style="position: relative; bottom: -55px; width: 30%; left: 6%; border-bottom:2px solid gray">Catographie</h3>
+                <img id="img-foo" src="img/footer.png" style="margin-top: 80px;">
+                <h3 id="contact-nous">Contactez-nous</h3> 
+                <h3 id="contact-nous-local" style="position: relative; bottom: 55px; width: 30%; left: 65%; border-bottom:2px solid gray">localisation</h3> 
+                    <img id="local" src="img/localisation.jpg" alt="pld" style="width: 25%; height: 200px; 
+                                        position: relative; bottom: 20px;">
+                
+                <ul>
+                    <i class="fab fa-facebook"></i>
+                    <li>facebook</li>
+                    <i class="fab fa-twitter"></i>
+                    <li>twitter</li>
+                    <i class="fab fa-youtube"></i>
+                    <li>Youtube</li>
+                    <i class="fab fa-whatsapp"></i>
+                    <li>Whatsapp</li>
+                    <s></s>
+                </ul>
+                    <b>
+                          &copy;By micro-finance <abbr title="Ir.Placide muhemedi salumu">pld</abbr> 
+                     </b>
+            </footer>
+
+   
+    <script src="tout.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+</body>
+</html>
+
+<script>
+
+    function addition() {
+            let c = confirm("proceddez à ces étapes suivates pour bien éffectuer votre transfert ")
+                if (c) {
+                    let étape_1_sur_8 = prompt("entrez votre nom")
+                    let étape_2_sur_8 = prompt("entrez le nom du beneficiant")
+                    let étape_3_sur_8 = prompt(" entrez le numero de sa carte bancaire")
+                    let étape_4_sur_8 = prompt("entrez le montant du en nombre")
+                    let étape_5_sur_8 = prompt("entrez le montant du en toute lettre")
+                    let étape_6_sur_8 = prompt("entrez votre mot de passe")
+                    let étape_7_sur_8 = prompt("entrez votre mot de confirme")
+                    let étape_8_sur_8 = prompt ("cliquew oui pour continuer et non pour annuler")
+            
+                    let d = confirm("   votre nom                           : " + (étape_1_sur_8)+
+                                    "\n le nom du beneficiaire--------------: " + (étape_2_sur_8)+
+                                    "\n le numero carte bancaire client-----: " +(étape_3_sur_8)+
+                                    "\n le montant envoyer------------------: " +(étape_4_sur_8)+
+                                    "\n montant en toute lettre--------------: " +(étape_5_sur_8)+
+                                    "\n le mot de passe----------------------: " +(étape_6_sur_8)+
+                                    "\n le mot de passe de confirmation------: " +(étape_7_sur_8)+
+                                    "\n reponse de confirmation de l'envoie--: " +(étape_8_sur_8));
+                    alert("votre demande  est effectue avec succes")
+               if (d) {
+                   addition()
+               }
+
+
+
+               else{
+                   alert("désolé vous avez quitté")
+               }
+            }
+              
+                else {
+                    alert("vous avez annuler")
+                }
+       }
+addition()
+
+</script>

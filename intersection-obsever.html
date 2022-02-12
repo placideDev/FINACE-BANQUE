@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>intersetion</title>
+</head>
+<style>
+  ::before,
+  ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2.5vw 5vw;
+    background: #222;
+
+  }
+  h1{
+    font-size: clamp(30px, 7vw, 90px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 span:nth-child(1){
+    font-weight: 700;
+    color: red;
+
+  }
+  h1 span:nth-child(2){
+    font-weight: 100;
+ 
+  }
+  #line{
+    width: 19px;
+    margin: calc(2vw + 10px) auto;
+    background: rgb(255, 255, 255);
+    height: clamp(125, 10vw, 250px);
+  }
+  .images-container{
+    display:grid;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .images-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+</style>
+<body>
+    <h1><span>mes galleries</span>    
+    <span>mes photos</span>
+  </h1> 
+  <div id="line"> kl</div>
+  <div class="images-container">
+    <img src="img/badimg.jpeg" alt="">
+    <img src="img/CAP.png" alt="">
+    <img src="img/depot.jpg" alt="">
+    <img src="img/fina/fina1.webp" alt="">
+    <img src="img/fina/level1.webp" alt="">
+    <img src="img/fina/fina1.webp" alt="">
+    <img src="img/fina/level3.webp" alt="">
+    <img src="img/fina/level4.webp" alt="">
+    <img src="img/fina/level5.jpg" alt="">
+    <img src="img/fina/schol.jpg" alt="">
+    <img src="img/fina/schol.jpg" alt="">
+    <img src="img/fina/schol.jpg" alt="">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll(".images-container img");
+
+    let options = {
+      //root: null;
+      rootMargin: "-10% 0px",
+      threshold:0
+    }
+
+    function handleIntersect(entries){
+      console.log(entries);
+
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.style.opacity = 1;
+        }
+      })
+    }
+    
+    const observer =  new IntersectionObserver(
+      handleIntersect, options
+    )
+    images.forEach(images => {
+      observer.observe(images)
+    })
+    
+    
+  </script>
+</body>
+</html>
+
+<style>
+    /* body{
+        color: #ffffbf;
+        font-family: IBM plex mono, monospace;
+        background: #191919;
+    }
+    .typer{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .writer p::after{
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 1px;
+        background: #dadada;
+        right: 0;
+        top: 0;
+        animation: cursor 2s infinite;
+    }
+    .writer{
+        font-size: 45px;
+        font-weight: lighter;
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+        animation: typing 3.5s steps(18);
+        /* animation-iteration-count: infinite; */
+    /* }
+    @keyframes typing{
+        from {width:0}
+        to {width: 100%;}
+    }
+    @keyframes cursor{
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+
+    }
+</style> */

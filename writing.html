@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+/* css pour le html et css */
+
+
+    body{
+        color: #ffffbf;
+        font-family: IBM plex mono, monospace;
+        background: #191919;
+    }
+
+
+    .typer{
+        width: 30%;
+        align-items: center;
+        height: 100px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .writer p::after{
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 1px;
+        background: #dadada;
+        right: 0;
+        top: 0;
+        animation: cursor 2s infinite;
+    }
+    .writer{
+        font-size: 45px;
+        font-weight: lighter;
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+        animation: typing 3.5s steps(18);
+        animation-iteration-count: infinite;
+        
+        
+    }
+    @keyframes typing{
+        from {width:0}
+        to {width: 100%;}
+    }
+    @keyframes cursor{
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+
+    }
+
+/* ce fini l'animation */
+
+
+
+/* ceci est reserve pour le css de javascipt */
+    .writer{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .writer .placide{
+        font-size: 300px;
+        font-weight: bold;
+    }
+    .writer p::after{
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 1px;
+        background:#ffffbf;
+        right: 0;
+        top: 0;
+        animation: cursor 3s infinite;
+    }
+
+    @keyframes typing{
+        from {width:0}
+        to {width: 100%;}
+    }
+
+    @keyframes cursor{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+
+</style>
+<body>
+    <div class="typer">
+        <div class="writer">
+            <p id="placide">soyez le bienvenu </p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- <script>
+    var x = 0;
+    var text = "salut bonjour vosu allez";
+    var sped = 50;
+
+
+    function typ(){
+        if (x < text.length) {
+            document.getElementById("placide").innerHTML += text.charAt(x);
+                x++;
+                setTimeout(typ, sped);
+        }
+    }
+    typ()
+</script> -->

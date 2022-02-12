@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sevice Client</title>
+    <link rel="stylesheet" href="service-client.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="general">
+            <div class="header">
+                <h2>Bienvenu dans FINALINE</h2>
+                
+            </div>
+       </div>   <!--fini le header     -->
+
+ <i class="fas fa-bars" onclick="navbar()"></i>
+           <nav>
+                 <div id="navbars" class="corp">
+                <ul class="list">
+                    <i class="fas fa-arrow-left" onclick="retun()"></i>
+                    <li> <a href="gerance-du-compte.html">Compte</a></li> 
+                    <li> <a href="surculation.html">Detail client</a></li> 
+                  <li> <a href="credit.html">Credit</a> </li>
+                  <li><a href="un-depot.html">Depot</a></li>
+                  <li> <a href="paiement1.html">Transfert</a> </li>
+                  <li> <a href="retraite.html">Retrait</a> </li>
+                
+                    </ul> 
+                </div>
+            </nav>
+
+       <!-- le debit di corps de de detaille -->
+<!--ceci est reserve pour le l'input detaille du clent -->
+     
+       <!-- <div class="corps">
+           <nav>
+           <ul class="list">
+                 <li> <a href="surculation.html">Detail client</a></li> 
+                  <li> <a href="credit.html">Credit</a> </li>
+                  <li><a href="un-depot.html">Depot</a></li>
+                  <li> <a href="paiement1.html">Transfert</a> </li>
+                  <li> <a href="retraite.html">Retrait</a> </li>
+                   <li><a href="service-cleint.html">Creer un compte</a></li>
+                </ul>
+            </nav> -->
+    <form action="accueil.html" method="post">
+        <h3>créer votre compte</h3>
+<!-- add a customer -->
+<div class="tout">
+    <div class="lesnom" id="un">
+        <label for="input">Nom:</label>
+        <input type="text" placeholder="entre le nom">
+        <label for="input">post-nom:</label>
+        <input type="text" placeholder="le post-nom">
+        <label for="inputr">prenom:</label>
+        <input type="text" placeholder="Entre le prenom">
+    </div>
+    <div class="lesnom" id="mail">
+        <label for="email">Email:</label>
+        <input type="Email" name="mail" id="" placeholder="entre votre Email">
+        <label for="email">numero Mobile:</label>
+        <input type="number" name="number" id="numero" placeholder="numero">
+        <label for="email">confirme le numero:</label>
+        <input type="number" name="number" id="authen" placeholder="authentifier deuxieme"><br>
+    </div>
+</div>
+ <div class="tout2">
+      <div class="lesnom" id="date">
+        <label for="date">Date naissance</label>
+        <input type="date" placeholder="date de naissance">
+        <label for="date">numero du compte</label>
+        <input type="number" placeholder="numero d'authentification">
+        <label for="date">votre Balance</label>
+        <input type="number" placeholder="votre Balance">
+        <label for="input">District</label>
+        <input type="date" placeholder="date de naissance">
+        </div>
+ 
+
+   
+        <div class="lesnom" id="ville">
+             <label for="vile">Adresse local</label>
+                <input type="adress" placeholder="adress">
+             <label for="date">ville</label>
+             <input type="town" placeholder="numero d'authentification">
+             <label for="date">autre</label>
+            <input type="adress" placeholder="">
+             <label for="date">votre Code</label>
+            <input type="number" placeholder="numero d'authentification">
+        </div>
+    </div>
+    
+    <button type="reset" value="vous etes sur point d'annule votre formulaire" formaction="service-cleint.html">Annule</button>
+    <button type="submit" title="submit your request" formaction="carte-credit.html">Valide</button>
+    </form>
+</div>
+
+
+
+
+
+<footer>
+                <h2 id="appropos">Apropos</h2>
+                <p>
+        
+                Le site lafinancepourtous.com est édité par l’Institut pour l’Education Financière du Public (IEFP), association d’intérêt général, éligible au mécénat et agréée par le Ministère de l’Education Nationale. L’IEFP a été créé pour aider chacun à acquérir les bases de connaissances nécessaires pour :
+        
+                 Se sentir plus à l’aise avec les questions financières.
+                  Comprendre les enjeux économiques du monde dans lequel nous vivons.
+                 Prendre en toute connaissance de cause les décisions qui nous concernent.
+                </p>
+                <h3 style="position: relative; bottom: -55px; width: 30%; left: 6%; border-bottom:2px solid gray">Catographie</h3>
+                <img id="img-foo" src="img/footer.png" style="margin-top: 80px;">
+                <h3 id="contact-nous">Contactez-nous</h3> 
+                <h3 id="contact-nous-local" style="position: relative; bottom: 55px; width: 30%; left: 65%; border-bottom:2px solid gray">localisation</h3> 
+                    <img id="local" src="img/localisation.jpg" alt="pld" style="width: 25%; height: 200px; 
+                                        position: relative; bottom: 20px;">
+                
+                <ul>
+                    <i class="fab fa-facebook"></i>
+                    <li>facebook</li>
+                    <i class="fab fa-twitter"></i>
+                    <li>twitter</li>
+                    <i class="fab fa-youtube"></i>
+                    <li>Youtube</li>
+                    <i class="fab fa-whatsapp"></i>
+                    <li>Whatsapp</li>
+                    <s></s>
+                </ul>
+                    <b>
+                          &copy;By micro-finance <abbr title="Ir.Placide muhemedi salumu">pld</abbr> 
+                     </b>
+            </footer>
+
+  </div>
+  <script src="js/all.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+  <script src="tout.js"></script>
+</body>
+</html>

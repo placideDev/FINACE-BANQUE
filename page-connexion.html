@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion avec FINALINE</title>
+    <link rel="stylesheet" href="welcom.css">
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap')">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+<body class="bck">
+   
+    <div class="general2">
+        <form action="valide">
+        <div class="left-img">
+            <h1>FINALINE</h1>
+            <p>Avec la puissance de FINALINE, vous pouvez effectuer 
+                vos achats et paiements en ligne grâce à des cartes
+                 de crédit virtuelles sans aucun frais 
+                 de transaction.
+            </p> 
+            
+            <h3>vous n'avez un compte ?</h3><br>
+                 <a class="ouvrir" href="service-cleint.html"> Ouvrir un compte</a><br>
+            <small class="sml">terme et conditions</small>
+
+        </div>
+        <div class="right-conexion">
+            <h2>connectez-vous</h2>
+            <label for="input"> Adresse Email</label>
+            <input type="E-mail" placeholder="exemple@gmail.com">
+            <label for="input">Mot de passe</label> 
+            <input  type="password" name="passe" id="modpasse"
+             placeholder="mettez votre mot de passe de validation" >
+            <div id="robot">
+           <br>
+            <input type="checkbox" onclick="affich()">
+              
+            <i>je ne suis pas un robot </i> 
+            <button  class="btn" type="submit" formaction="accueil.html"> Connexion</button>
+            <button type="reset" class="reset">Reinitialise</button>
+                </form>
+        </div>
+        </div>
+  <img class="roboticon" id="image" src="img/loading.gif"  style="  transition: all 0.3s;
+    z-index: 1;
+    position: absolute;
+    top:63vh; 
+    margin-left: 58%; 
+    display: none;
+    " alt="">
+
+
+        
+    </div>
+
+
+
+   <script src="lightbox-plus-jquery.min.js"></script> 
+</body>
+</html>
+
+<script>
+    function affich(){
+        let image = document.getElementById("image");
+            image.style.display="block";
+            image.style.animationDelay="4s"
+    }
+       
+
+    // const img =  document.querySelector('img');
+
+    //     window.addEventListener('load',() =>{
+    //         img.classList.add('rbticon')
+            
+    //     })
+</script>
